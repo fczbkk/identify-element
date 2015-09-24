@@ -2,7 +2,7 @@
   "title": "Identify element",
   "name": "identify-element",
   "description": "A simple way to uniquely identify an HTML element.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:fczbkk/identify-element"
