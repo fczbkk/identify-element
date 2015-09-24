@@ -1,0 +1,28 @@
+{
+  "name": "identify-element",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fczbkk/identify-element",
+  "author": {
+    "name": "Riki Fridrich",
+    "email": "riki@fczbkk.com",
+    "url": "https://github.com/fczbkk"
+  },
+  "description": "A simple way to uniquely identify an HTML element.",
+  "main": "lib/identify-element.js",
+  
+  "license": "LICENSE",
+  
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "src",
+    "doc",
+    "Gruntfile.coffee",
+    ".DS_Store",
+    "bower.json",
+    "package.json",
+    "assets"
+  ]
+}
