@@ -2,32 +2,76 @@
 
 A simple way to uniquely identify an HTML element.
 
+## Documentation
+
+### getIdentifiedElement
+
+Gets element that was previously identified using [`identifyElement()`](#identifyelement).
+
+**Parameters**
+
+-   `id` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+
+**Examples**
+
 ```javascript
-// It returns unique number for every element.
-
-var aaa = document.createElement('div');
-var bbb = document.createElement('div');
-
-identifyElement(aaa);  // --> 1
-identifyElement(bbb);  // --> 2
-identifyElement(aaa);  // --> 1
-
-// That number is the same for given element, as long as the element exists.
 var elm = document.createElement('div');
-identifyElement(elm);  // --> 3
-elm = document.createElement('div'); // replace element with new one
-identifyElement(elm);  // --> 4
-
-// You can use your own namespace for unique IDs.
-// An element can have unique ID for any number of namespaces.
-var elm = document.createElement('div');
-identifyElement(elm, 'aaa');  // --> 5
-identifyElement(elm, 'bbb');  // --> 6
-
-// Returns `null` for non-elements.
-identifyElement();  // --> null
-identifyElement('aaa');  // --> null
+var id = identifyElement(elm);
+getidentifiedElement(id);  // returns elm
 ```
+
+Returns **?[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** Identified element if found, otherwise `null`.
+
+### identifyElement
+
+Returns unique identifier for the provided element.
+
+**Parameters**
+
+-   `element` **[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
+-   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Additional identification of namespace, if you need to identify the same element within several contexts.
+
+**Examples**
+
+_Simple identification of element._
+
+```javascript
+var elm = document.createElement('div');
+identifyElement(elm);  // returns e.g. 1
+identifyElement(elm);  // every consecutive call returns the same ID, e.g. 1
+```
+
+_Identifying element using different namespaces._
+
+```javascript
+var elm = document.createElement('div');
+identifyElement(elm, 'aaa');  // returns e.g. 1
+identifyElement(elm, 'bbb');  // returns e.g. 2
+```
+
+Returns **(?[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))** Number if identifiable element is provided, otherwise `null`.
+
+### isElementIdentified
+
+Checks whether provided element is already identified.
+
+**Parameters**
+
+-   `element` **[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
+-   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+
+**Examples**
+
+```javascript
+var elm = document.createElement('div');
+isElementIdentified(elm); // returns false
+identifyElement(elm);
+isElementIdentified(elm); // returns true
+```
+
+Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
+## How it works
 
 The function uses `data-*` attributes to store IDs associated with the element. These attributes have no impact on element's appearance or functionality.
 
@@ -37,8 +81,7 @@ The generated IDs should be sequential. But don't rely on it, especially if you 
 
 ## Bug reports, feature requests and contact
 
-If you found any bugs, if you have feature requests or any questions, please, either [file an issue at GitHub](https://github.com/fczbkk/identify-element/issues) or send me an e-mail at [riki@fczbkk.com](mailto:riki@fczbkk.com).
-
+If you found any bugs, if you have feature requests or any questions, please, either [file an issue at GitHub](https://github.com/fczbkk/identify-element/issues) or send me an e-mail at <a href="mailto:riki@fczbkk.com">riki@fczbkk.com</a>.
 
 ## License
 
