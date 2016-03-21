@@ -22,7 +22,7 @@ function constructAttribute (namespace) {
  * Returns unique identifier for the provided element.
  * @param {HTMLElement} element
  * @param {string} namespace Additional identification of namespace, if you need to identify the same element within several contexts.
- * @returns {(?number)} Number if identifiable element is provided, otherwise `null`.
+ * @returns {?number} Number if identifiable element is provided, otherwise `null`.
  *
  * @example <caption>Simple identification of element.</caption>
  * var elm = document.createElement('div');
