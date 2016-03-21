@@ -49,7 +49,7 @@ identifyElement(elm, 'aaa');  // returns e.g. 1
 identifyElement(elm, 'bbb');  // returns e.g. 2
 ```
 
-Returns **(?[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))** Number if identifiable element is provided, otherwise `null`.
+Returns **?[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Number if identifiable element is provided, otherwise `null`.
 
 ### isElementIdentified
 

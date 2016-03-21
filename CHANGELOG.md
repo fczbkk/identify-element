@@ -1,3 +1,13 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/fczbkk/identify-element/compare/v2.0.0...v2.1.0) (2016-03-21)
+
+
+### Features
+
+* add `getIdentifiedElement()` ([b033f53](https://github.com/fczbkk/identify-element/commit/b033f53))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/fczbkk/identify-element/compare/v1.0.1...v2.0.0) (2016-03-08)
 
