@@ -29,7 +29,7 @@ Returns unique identifier for the provided element.
 **Parameters**
 
 -   `element` **[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
--   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Additional identification of namespace, if you need to identify the same element within several contexts.
+-   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)=** Additional identification of namespace, if you need to identify the same element within several contexts.
 
 **Examples**
 
@@ -58,7 +58,7 @@ Checks whether provided element is already identified.
 **Parameters**
 
 -   `element` **[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
--   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)=** 
 
 **Examples**
 

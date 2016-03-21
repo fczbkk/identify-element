@@ -21,7 +21,7 @@ function constructAttribute (namespace) {
 /**
  * Returns unique identifier for the provided element.
  * @param {HTMLElement} element
- * @param {string} namespace Additional identification of namespace, if you need to identify the same element within several contexts.
+ * @param {string=} namespace Additional identification of namespace, if you need to identify the same element within several contexts.
  * @returns {?number} Number if identifiable element is provided, otherwise `null`.
  *
  * @example <caption>Simple identification of element.</caption>
@@ -56,7 +56,7 @@ export function identifyElement (element, namespace) {
 /**
  * Checks whether provided element is already identified.
  * @param {HTMLElement} element
- * @param {string} namespace
+ * @param {string=} namespace
  * @returns {boolean}
  *
  * @example
