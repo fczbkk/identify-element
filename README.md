@@ -4,24 +4,6 @@ A simple way to uniquely identify an HTML element.
 
 ## Documentation
 
-### getIdentifiedElement
-
-Gets element that was previously identified using [`identifyElement()`](#identifyelement).
-
-**Parameters**
-
--   `id` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
-
-**Examples**
-
-```javascript
-var elm = document.createElement('div');
-var id = identifyElement(elm);
-getidentifiedElement(id);  // returns elm
-```
-
-Returns **?[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** Identified element if found, otherwise `null`.
-
 ### identifyElement
 
 Returns unique identifier for the provided element.
@@ -29,7 +11,7 @@ Returns unique identifier for the provided element.
 **Parameters**
 
 -   `element` **[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
--   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)=** Additional identification of namespace, if you need to identify the same element within several contexts.
+-   `namespace` **\[[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)]** Additional identification of namespace, if you need to identify the same element within several contexts.
 
 **Examples**
 
@@ -58,7 +40,7 @@ Checks whether provided element is already identified.
 **Parameters**
 
 -   `element` **[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
--   `namespace` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)=** 
+-   `namespace` **\[[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)]** 
 
 **Examples**
 
@@ -70,6 +52,24 @@ isElementIdentified(elm); // returns true
 ```
 
 Returns **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
+### getIdentifiedElement
+
+Gets element that was previously identified using [`identifyElement()`](#identifyelement).
+
+**Parameters**
+
+-   `id` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** 
+
+**Examples**
+
+```javascript
+var elm = document.createElement('div');
+var id = identifyElement(elm);
+getidentifiedElement(id);  // returns elm
+```
+
+Returns **?[HTMLElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** Identified element if found, otherwise `null`.
 
 ## How it works
 

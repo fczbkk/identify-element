@@ -1,3 +1,13 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/fczbkk/identify-element/compare/v2.1.1...v2.2.0) (2016-08-28)
+
+
+### Features
+
+* split library and module ([7a03a7f](https://github.com/fczbkk/identify-element/commit/7a03a7f))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/fczbkk/identify-element/compare/v2.1.0...v2.1.1) (2016-03-21)
 
