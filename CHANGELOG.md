@@ -1,3 +1,13 @@
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/fczbkk/identify-element/compare/v2.2.0...v2.2.1) (2016-08-29)
+
+
+### Bug Fixes
+
+* fix publish workflow ([0ad5169](https://github.com/fczbkk/identify-element/commit/0ad5169))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/fczbkk/identify-element/compare/v2.1.1...v2.2.0) (2016-08-28)
 
