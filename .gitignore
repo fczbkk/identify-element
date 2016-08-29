@@ -3,5 +3,6 @@
 /lib/
 /module/
 npm-debug.log
+npm-debug.log.*
 /temp/
 .DS_store
